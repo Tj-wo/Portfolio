@@ -62,7 +62,7 @@ header h1:hover {
 }
 
 .hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background-image.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('male-developer-entering-binary-data-terminal-panel.jpg') no-repeat center center/cover;
   color: #fff;
   padding: 100px 0;
   text-align: center;
@@ -70,13 +70,13 @@ header h1:hover {
 }
 
 .hero-section:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('background-image.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('male-developer-entering-binary-data-terminal-panel.jpg') no-repeat center center/cover;
 }
 
 .hero-section h2 {
   font-size: 50px;
   margin-bottom: 20px;
-  color: #2e151b;
+  color: #b32747;
   transition: color 0.3s ease;
 }
 
@@ -107,9 +107,8 @@ header h1:hover {
 }
 
 .btn-primary:hover {
-  background-color: #1c334;
-  color: #f0f0f0;
-  transform: scale(1.05);
+  background-color: #da7b93;
+  text-decoration: underline;
 }
 
 section {
@@ -238,7 +237,7 @@ section {
 }
 
 #contactForm button[type="submit"]:hover {
-  background-color: #1c334;
+  background-color: #da7b93;
   transform: scale(1.05);
 }
 
