@@ -175,7 +175,6 @@ section {
 }
 
 .projects-section {
-  background-color: #ffffff;
   font-size: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -186,7 +185,6 @@ section {
 }
 
 .project {
-  background-color: #f9f9f9;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -209,12 +207,17 @@ section {
 
 .project p {
   font-size: 16px;
-  color: #555;
+ color: #555;
+}
+
+.project p:hover {
+  color: #da7b93;
 }
 
 .project:hover {
   transform: translateY(-10px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  
 }
 
 .project a {
@@ -224,6 +227,7 @@ section {
 
 .project a:hover {
   text-decoration: none;
+  color: #da7b93;
 }
 
 .projects-section a {
@@ -234,7 +238,6 @@ section {
 }
 
 .projects-section a:hover {
-  text-decoration: underline;
   color: #da7b93;
 }
 
