@@ -179,14 +179,51 @@ section {
   font-size: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-.projects-section ul {
-  list-style: none;
-  padding: 0;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-.projects-section li {
+.project {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
   margin-bottom: 15px;
+}
+
+.project h3 {
+  margin: 10px 0;
+  font-size: 22px;
+  color: #376e6f;
+}
+
+.project p {
+  font-size: 16px;
+  color: #555;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project a:hover {
+  text-decoration: none;
 }
 
 .projects-section a {
