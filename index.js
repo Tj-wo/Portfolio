@@ -1,29 +1,21 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('contactForm');
-    const responseDiv = document.getElementById('formResponse');
+const navMenu = document.querySelector('.nav-menu');
 
-    form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the form from submitting the traditional way
+navMenu.addEventListener('click', (e) => {
+  if (e.target.tagName === 'A') {
+    e.preventDefault();
+    const sectionId = e.target.getAttribute('href');
+    document.querySelector(sectionId).scrollIntoView({ behavior: 'smooth' });
+  }
+});
 
-        const formData = new FormData(form);
+const contactForm = 
+document.getElementById('contactForm');
 
-        fetch('send_message.php', {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => {
-            if (response.ok) {
-                return response.text();
-            } else {
-                throw new Error('Network response was not ok.');
-            }
-        })
-        .then(data => {
-            responseDiv.textContent = data;
-            form.reset(); // Clear the form
-        })
-        .catch(error => {
-            responseDiv.textContent = 'There was a problem with your submission.';
-        });
-    });
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const formData = new FormData(contactForm);
+  const name = formData.get('name');
+  const email = formData.get('email');
+  const message = formData.get('message');
+  document.getElementById('formResponse').innerHTML = `Thank you, ${name}, for your message!`;
 });
